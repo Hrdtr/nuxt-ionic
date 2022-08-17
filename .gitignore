@@ -18,7 +18,7 @@ playground/ios
 **/.yarn/*state*
 
 # Generated dirs
-dist
+# dist
 
 # Nuxt
 .nuxt
