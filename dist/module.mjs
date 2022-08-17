@@ -139,13 +139,11 @@ const module = defineNuxtModule({
       core: true,
       basic: true,
       utilities: false
-    },
-    config: {}
+    }
   },
   async setup(options, nuxt) {
     nuxt.options.build.transpile.push(runtimeDir);
     nuxt.options.build.transpile.push(/@ionic/, /@stencil/);
-    nuxt.options.runtimeConfig.ionic = options.config;
     const ionicConfigPath = join(nuxt.options.rootDir, "ionic.config.json");
     if (!existsSync(ionicConfigPath)) {
       await promises.writeFile(

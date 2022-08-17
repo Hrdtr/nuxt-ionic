@@ -1,6 +1,5 @@
 import { IonicVue } from "@ionic/vue";
-import { defineNuxtPlugin, useRuntimeConfig } from "#imports";
+import { defineNuxtPlugin } from "#imports";
 export default defineNuxtPlugin((nuxtApp) => {
-  const { ionic: config } = useRuntimeConfig();
-  nuxtApp.vueApp.use(IonicVue, config);
+  nuxtApp.vueApp.use(IonicVue);
 });
